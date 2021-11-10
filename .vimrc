@@ -3,6 +3,7 @@
 
 " Line numbers
 set number
+highlight LineNr ctermfg=DarkGrey
 
 " Encoding
 set encoding=utf-8

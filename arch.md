@@ -103,14 +103,49 @@ grub-install --target=i386-pc /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 ```
 
+## User management
+
+* Set up root password
+```bash
+passwd
+```
+
+* Set up wheel group (administrator group)
+```bash
+EDITOR=vim visudo
+```
+
+Uncomment line "# %wheel ALL=(ALL) ALL"
+
 * Add new user
 ```bash
 useradd -m user
 passwd user
 ```
 
+* Add user to wheel group
+```bash
+usermod -aG wheel user
+```
+
+## Done
+
 * Exit from arch-chroot and reboot
 ```bash
 exit
 reboot
+```
+
+# Desktop
+
+* Log in as regular user
+
+* Install video drivers (vm example) and xorg server
+```bash
+sudo pacman -S xf86-video-fbdev xorg xorg-xinit xterm
+```
+
+* Initialize x server
+```bash
+sudo xinit
 ```

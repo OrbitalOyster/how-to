@@ -23,6 +23,10 @@ set shiftwidth=2
 " Highlight cursor line
 set cursorline
 
+ " Searching
+ set incsearch
+ set hlsearch
+
 " Confirm saving file before quitting
 set confirm
 

@@ -149,3 +149,10 @@ sudo pacman -S xf86-video-fbdev xorg xorg-xinit xterm
 ```bash
 sudo xinit
 ```
+
+twm with several xterm's should start
+
+* Copy default xinitrc file to home directory
+```bash
+cp /etc/X11/xinit/xinitrc ~/.xinitrc
+```

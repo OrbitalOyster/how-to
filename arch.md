@@ -1,7 +1,9 @@
 # Installation
+
 Create bootable USB stick, start up Arch Linux live environment
 
 ## Disk partitioning
+
 * Find target disk (e.g. /dev/sda)
 ```bash
 fdisk -l
@@ -36,6 +38,7 @@ swapon /dev/sda2
 ```
 
 ## Actual installation
+
 * Mount root partition
 ```bash
 mount /dev/sda3 /mnt
@@ -49,7 +52,7 @@ mount /dev/sda1 /mnt/boot
 
 * Install Arch Linux and any additional packages
 ```bash
-pacstrap /mnt base base-devel linux linux-firmware vim htop
+pacstrap /mnt base base-devel linux linux-firmware vim htop git
 ```
 
 * Wait for it...
@@ -156,3 +159,27 @@ twm with several xterm's should start
 ```bash
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 ```
+
+## Suckless
+
+* Install fonts
+```bash
+sudo pacman -S noto-fonts ttf-linux-libertine gnu-free-fonts
+```
+
+* Download dwm
+```bash
+git clone git://git.suckless.org/dwm
+```
+
+* Download st
+```bash
+git clone git://git.suckless.org/st
+```
+
+* Download dmenu
+```bash
+git clone git://git.suckless.org/dmenu
+```
+
+

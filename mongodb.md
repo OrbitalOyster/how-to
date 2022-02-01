@@ -1,5 +1,8 @@
 # Installation
 
+Official documentation:
+https://docs.mongodb.com/manual/administration/install-community/
+
 # Running
 ```bash
 sudo systemctl enable mongod

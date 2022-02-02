@@ -24,8 +24,8 @@ set shiftwidth=2
 set cursorline
 
  " Searching
- set incsearch
- set hlsearch
+set incsearch
+set hlsearch
 
 " Confirm saving file before quitting
 set confirm

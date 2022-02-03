@@ -56,6 +56,11 @@ Commit
 git commit -m "First commit"
 ```
 
+Undo commit
+```bash
+git reset HEAD~
+```
+
 Check log
 ```bash
 git log

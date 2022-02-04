@@ -61,6 +61,13 @@ Undo commit
 git reset HEAD~
 ```
 
+Edit commit
+```bash
+git commit --amend
+# If commit is already published
+git push -f
+```
+
 Check log
 ```bash
 git log

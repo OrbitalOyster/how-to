@@ -43,7 +43,10 @@ git reset app.js
 
 List changes
 ```bash
+# Show modified files
 git checkout
+# Show modified lines
+git diff
 ```
 
 Undo changes

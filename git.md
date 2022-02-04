@@ -63,8 +63,10 @@ git reset HEAD~
 
 Edit commit
 ```bash
-git commit --amend
-# If commit is already published
+git commit --amend -m "New message"
+# Without changing commit message:
+git commit --amend --no-edit
+# If commit is already published:
 git push -f
 ```
 

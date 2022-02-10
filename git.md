@@ -95,6 +95,16 @@ Create branch
 git checkout -b experimental_branch
 ```
 
+List all branches
+```bash
+git branch
+```
+
+Rename branch
+```bash
+git branch -m old_name new_name
+```
+
 Make branch master
 ```bash
 git checkout master

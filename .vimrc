@@ -8,6 +8,9 @@ highlight LineNr ctermfg=DarkGrey
 " Encoding
 set encoding=utf-8
 
+" Syntax highlight
+syntax on
+
 " Word wrap
 set wrap
 set textwidth=80

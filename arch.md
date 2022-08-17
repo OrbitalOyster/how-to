@@ -91,6 +91,7 @@ Edit /etc/locale.gen, uncomment desired locales, generate them
 vim /etc/locale.gen
 locale-gen
 echo "LANG=en-US.UTF-8" >> /etc/locale
+localectl set-locale LANG=en_US.UTF-8
 ```
 
 * Install network manager

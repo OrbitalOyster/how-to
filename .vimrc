@@ -3,6 +3,7 @@
 
 " Line numbers
 set number
+set relativenumber
 highlight LineNr ctermfg=DarkGrey
 
 " Encoding
